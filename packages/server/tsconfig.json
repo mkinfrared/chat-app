@@ -1,0 +1,27 @@
+{
+  "extends": "../../tsconfig",
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "outDir": "./build",
+    "baseUrl": "src",
+    "paths": {
+      "@controllers/*": ["controllers/*"],
+      "@db/*": ["db/*"],
+      "@emails/*": ["emails/*"],
+      "@messages/*": ["messages/*"],
+      "@middleware/*": ["middleware/*"],
+      "@public/*": ["public/*"],
+      "@resolvers/*": ["resolvers/*"],
+      "@routes/*": ["routes/*"],
+      "@schema/*": ["schema/*"],
+      "@test/*": ["test/*"],
+      "@type/*": ["type/*"],
+      "@util/*": ["util/*"]
+    },
+    "plugins": [{ "transform": "typescript-transform-paths" }]
+  },
+  "exclude": ["node_modules"],
+  "include": ["./src/**/*.tsx", "./src/**/*.ts"]
+}
