@@ -1,0 +1,30 @@
+.SignUp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 500px;
+  min-height: 100vh;
+  margin: 0 auto;
+  text-align: center;
+
+  h4 {
+    margin-bottom: 20px;
+  }
+
+  .paper {
+    padding: 20px;
+    width: 100%;
+
+    .inputFields {
+      .input {
+        &:not(:last-child) {
+          margin-bottom: 20px;
+        }
+      }
+    }
+
+    > button {
+      margin-top: 20px;
+    }
+  }
+}

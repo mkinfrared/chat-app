@@ -11,12 +11,11 @@ module.exports = {
     "@emails/(.*)": "<rootDir>/src/emails/$1",
     "@messages/(.*)": "<rootDir>/src/messages/$1",
     "@middleware/(.*)": "<rootDir>/src/middleware/$1",
-    "@resolvers/(.*)": "<rootDir>/src/resolvers/$1",
     "@routes/(.*)": "<rootDir>/src/routes/$1",
-    "@schema/(.*)": "<rootDir>/src/schema/$1",
+    "@sockets/(.*)": "<rootDir>/src/sockets/$1",
     "@test/(.*)": "<rootDir>/src/test/$1",
     "@type/(.*)": "<rootDir>/src/type/$1",
-    "@util/(.*)": "<rootDir>/src/util/$1"
+    "@utils/(.*)": "<rootDir>/src/utils/$1"
   },
   moduleFileExtensions: ["ts", "js"],
   transform: {

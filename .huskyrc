@@ -1,6 +1,5 @@
 {
   "hooks": {
-    "pre-commit": "lint-staged",
-    "post-merge": "npm postmerge"
+    "pre-commit": "lint-staged"
   }
 }

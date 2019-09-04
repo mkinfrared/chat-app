@@ -9,16 +9,12 @@
     "paths": {
       "@controllers/*": ["controllers/*"],
       "@db/*": ["db/*"],
-      "@emails/*": ["emails/*"],
       "@messages/*": ["messages/*"],
-      "@middleware/*": ["middleware/*"],
       "@public/*": ["public/*"],
-      "@resolvers/*": ["resolvers/*"],
       "@routes/*": ["routes/*"],
-      "@schema/*": ["schema/*"],
+      "@sockets/*": ["sockets/*"],
       "@test/*": ["test/*"],
-      "@type/*": ["type/*"],
-      "@util/*": ["util/*"]
+      "@utils/*": ["utils/*"]
     },
     "plugins": [{ "transform": "typescript-transform-paths" }]
   },

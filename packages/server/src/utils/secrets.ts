@@ -15,6 +15,10 @@ const COMPANY_EMAIL = process.env.COMPANY_EMAIL as string;
 const SESSION_SECRET = process.env.SESSION_SECRET as string;
 const FRONTEND_HOST = process.env.FRONTEND_HOST as string;
 const REDIS_HOST = process.env.REDIS_HOST as string;
+const DB_HOST = process.env.DB_HOST as string;
+const DB_USERNAME = process.env.DB_USERNAME as string;
+const DB_PASSWORD = process.env.DB_PASSWORD as string;
+const DB_NAME = process.env.DB_NAME as string;
 
 export {
   SERVER_PORT,
@@ -27,5 +31,9 @@ export {
   COMPANY_EMAIL,
   SESSION_SECRET,
   FRONTEND_HOST,
-  REDIS_HOST
+  REDIS_HOST,
+  DB_HOST,
+  DB_NAME,
+  DB_PASSWORD,
+  DB_USERNAME
 };
