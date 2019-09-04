@@ -4,9 +4,9 @@ import { Connection } from "typeorm";
 
 import createOrmConnection from "@db/createOrmConnection";
 
-import startServer from "../app";
+import startServer, { app } from "../app";
 
-export let httpServer: Server;
+let httpServer: Server;
 let connection: Connection;
 
 beforeAll(async () => {
@@ -28,3 +28,5 @@ afterAll(() => {
     httpServer.close();
   }
 });
+
+export { app, httpServer };

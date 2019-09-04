@@ -5,7 +5,7 @@ import {
   COMPANY_NAME,
   EMAIL_PASSWORD,
   EMAIL_USERNAME
-} from "@util/secrets";
+} from "@utils/secrets";
 
 export default async (
   email: string,

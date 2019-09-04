@@ -2,15 +2,23 @@
   "name": "@chat-app/common",
   "private": true,
   "version": "0.0.0",
-  "main": "./build/index.js",
-  "types": "./build/index.d.ts",
+  "main": "build/index.js",
+  "typings": "build/index.d.ts",
   "license": "MIT",
   "devDependencies": {
+    "@types/node": "^12.7.3",
+    "@types/rimraf": "^2.0.2",
+    "rimraf": "^3.0.0",
+    "ts-node": "^8.3.0",
     "ts-node-dev": "^1.0.0-pre.41",
     "ttypescript": "^1.5.7"
   },
   "scripts": {
-    "start": "ttsc -w",
-    "build": "ttsc"
+    "start": "rimraf ./build && yarn watch",
+    "watch": "tsc -w",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "yup": "^0.27.0"
   }
 }

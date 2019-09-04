@@ -1,6 +1,6 @@
 import Redis from "ioredis";
 
-import { REDIS_HOST } from "@util/secrets";
+import { REDIS_HOST } from "@utils/secrets";
 
 const redis = new Redis({
   host: REDIS_HOST,

@@ -11,7 +11,7 @@ RUN yarn
 
 COPY . .
 
-ENV RAILS_ENV $RAILS_ENV
+RUN yarn build:common
 
 #SERVER
 ENV SERVER_PORT="4000"

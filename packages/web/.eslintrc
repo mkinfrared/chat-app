@@ -3,6 +3,9 @@
   "rules": {
     "no-console": "error",
     "react/jsx-filename-extension": [1, { "extensions": [".ts", ".tsx"] }],
+    "react/state-in-constructor": "off",
+    "react/prop-types": "off",
+    "react/jsx-props-no-spreading": "off",
     "spaced-comment": [
       "error", "always",
       {
@@ -12,7 +15,6 @@
   },
   "settings": {
     "import/resolver": {
-      // use <root>/tsconfig.json
       "typescript": {
         "directory": "./packages/web/"
       }
